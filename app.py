@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    images = netrunner_request.get_data_and_destiny_triples(netrunner_request.getCards(netrunner_request.netrunnerdb_URL))
+    images = netrunner_request.get_data_and_destiny(netrunner_request.getCards(netrunner_request.netrunnerdb_URL))
     return render_template('index.html', images=images)
 
 @app.route('/data_and_destiny')
