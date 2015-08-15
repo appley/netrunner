@@ -27,11 +27,6 @@ def get_universe_of_tomorrow(card_data):
             yield card["code"]
 
 
-# def make_triples(card_data):
-#     for card in card_data:
-#         yield card["code"]
-
-
 if __name__ == "__main__":
 
     cards = getCards(netrunnerdb_URL)
